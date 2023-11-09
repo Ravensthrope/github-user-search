@@ -1,0 +1,30 @@
+.searchbar {
+  transform: translateY(220px);
+}
+
+.searchbar-exit {
+  opacity: 0;
+  transform: translateY(0);
+}
+.searchbar-exit-active {
+  opacity: 1;
+  transform: translateY(220px);
+  transition: opacity 500ms, transform 500ms;
+}
+.searchbar-exit-done {
+  opacity: 1;
+}
+
+.searchbar-enter {
+  opacity: 1;
+  transform: translateY(220px);
+}
+.searchbar-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 500ms, transform 500ms;
+}
+.searchbar-enter-done {
+  transform: translateY(0);
+  opacity: 1;
+}
